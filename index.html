@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe with Confetti Blast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✨ Tic-Tac-Toe ✨</h1>
+
+  <!-- Scoreboard -->
+  <div class="scoreboard">
+    <div class="score">X Score: <span id="xScore">0</span></div>
+    <div class="score">O Score: <span id="oScore">0</span></div>
+  </div>
+
+  <div class="board" id="board"></div>
+  <div id="status">Player X's turn</div>
+  <button onclick="resetGame()">Restart</button>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2 id="popupMessage"></h2>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
